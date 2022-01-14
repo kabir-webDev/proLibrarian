@@ -1,0 +1,132 @@
+module.exports = {
+  mode: "jit",
+  purge: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./Components/**/*.{js,ts,jsx,tsx}",
+    "./Layout/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    screens: {
+      xs: "411px",
+      sm: "540px",
+      smd: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1400px",
+      "3xl": "1920px",
+    },
+
+    container: {
+      center: true,
+      screens: {
+        xs: "400px",
+        sm: "525px",
+        smd: "620px",
+        md: "738px",
+        lg: "940px",
+        xl: "1196px",
+        "2xl": "1516px",
+      },
+    },
+    extend: {
+      fontFamily: {
+        satoshi: ["Satoshi", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        gurdianSans: ["GuardianSans"],
+      },
+      backgroundImage: {
+        "hero-pattern": "linear-gradient(to bottom, #000, #000)",
+      },
+      height: {
+        90: "90px",
+        250: "250px",
+        281: "281px",
+        324: "324px",
+        346: "346px",
+        300: "300px",
+        519: "519px",
+        691: "691px",
+        1037: "1037px",
+        417: "417px",
+        405: "405px",
+        263: "263px",
+        289: "289px",
+        267: "267px",
+        254: "254px",
+        719: "719px",
+      },
+      margin: {
+        22: "22px",
+        34: "34px",
+        400: "400px",
+        500: "500px",
+        700: "700px",
+      },
+      padding: {
+        74: "74px",
+      },
+      lineHeight: {
+        52: "52px",
+      },
+      width: {
+        345: "345px",
+        353: "353px",
+        481: "481px",
+        360: "360px",
+        365: "365px",
+        620: "620px",
+        548: "548px",
+        826: "826px",
+        1280: "1280px",
+        1920: "1920px",
+        306: "306px",
+        340: "340px",
+        517: "517px",
+        390: "390px",
+        649: "649px",
+        406: "406px",
+        475: "475px",
+        257: "257px",
+        315: "315px",
+        279: "279px",
+        779: "779px",
+        1071: "1071px",
+        330: "330px",
+        459: "459px",
+        408: "408px",
+      },
+      inset: {
+        '17': '68px',
+        '26': '104px',
+        '1.2': '-12px',
+      },
+      translate: {
+        '50': '-50%',
+      },
+      colors: {
+        primary: "#0e497b",
+        dark: "#1c1d22",
+        skyLight: "rgba(14, 73, 123, 0.37)",
+        sky: "#f5faff",
+        lightGreen: "#99d474",
+      },
+
+      letterSpacing: {
+        3.04: "3.04px",
+      },
+      boxShadow: {
+        vss: "0 3px 50px 0 rgba(0, 0, 0, 0.16)",
+      },
+      scale: {
+        102: "1.02",
+      },
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [require("@tailwindcss/typography")],
+};

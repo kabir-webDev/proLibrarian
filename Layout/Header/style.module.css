@@ -1,0 +1,14 @@
+/* 
+
+.mobileMenuNavItem .mobileMenuSubNavItem {
+   max-height: 0;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+    
+}
+
+.mobileMenuNavItem:hover .mobileMenuSubNavItem {
+      max-height: 500px;
+    transition: max-height 0.5s ease-in;
+} */
+

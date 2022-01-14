@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.29" height="14.861" viewBox="0 0 18.29 14.861">
+    <defs>
+        <style>
+            .cls-1{fill:#0e497b;fill-rule:evenodd}
+        </style>
+    </defs>
+    <g id="briefcase-fill" transform="translate(0 -1.5)">
+        <path id="Path_77" data-name="Path 77" class="cls-1" d="M0 16.734a1.715 1.715 0 0 0 1.715 1.715h14.86a1.715 1.715 0 0 0 1.715-1.715v-6.459l-9 2.4a.572.572 0 0 1-.295 0l-9-2.4z" transform="translate(0 -2.088)"/>
+        <path id="Path_78" data-name="Path 78" class="cls-1" d="M0 5.5a1.715 1.715 0 0 1 1.715-1.714h14.86A1.715 1.715 0 0 1 18.29 5.5v1.583L9.586 9.4a1.715 1.715 0 0 1-.882 0L0 7.083zm5.716-2.285A1.715 1.715 0 0 1 7.43 1.5h3.43a1.715 1.715 0 0 1 1.715 1.715v.572h-1.144v-.572a.572.572 0 0 0-.572-.572H7.43a.572.572 0 0 0-.572.572v.572H5.716z"/>
+    </g>
+</svg>

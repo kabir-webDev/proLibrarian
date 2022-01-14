@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="201.999" height="188.681" viewBox="0 0 201.999 188.681">
+    <defs>
+        <style>
+            .cls-1,.cls-5{fill:#fff}.cls-2{fill:#d8d8d8}.cls-5{opacity:.304}
+        </style>
+    </defs>
+    <g id="Group_25" data-name="Group 25">
+        <g id="Group_24" data-name="Group 24">
+            <g id="Group_22" data-name="Group 22" transform="translate(48.403 22.503)">
+                <rect id="Rectangle" class="cls-1" width="96.806" height="112.516" rx="2"/>
+                <path id="Combined_Shape" data-name="Combined Shape" class="cls-2" d="M74.062 39.813H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h72.062a2 2 0 0 1 2 2v35.813a2 2 0 0 1-2 2zM20.847 16.948a1.994 1.994 0 0 0-1.559.746L9.434 29.923a2 2 0 0 0 1.558 3.254h53.832a2 2 0 0 0 1.5-3.321l-15.1-17.149a2 2 0 0 0-1.5-.678 1.98 1.98 0 0 0-1.456.629L35.593 26.124a2 2 0 0 1-2.732.17L22.12 17.407a2 2 0 0 0-1.273-.459zM26.679 5.53a2.766 2.766 0 1 0 2.838 2.765 2.806 2.806 0 0 0-2.838-2.765z" transform="translate(10.372 10.386)"/>
+                <path id="Rectangle-2" data-name="Rectangle" class="cls-2" transform="translate(12.101 64.048)" d="M0 0h63.961v5.193H0z"/>
+                <path id="Rectangle_Copy_19" data-name="Rectangle Copy 19" class="cls-2" transform="translate(12.101 77.896)" d="M0 0h41.488v5.193H0z"/>
+                <path id="Rectangle_Copy_20" data-name="Rectangle Copy 20" class="cls-2" transform="translate(12.101 90.013)" d="M0 0h48.403v5.193H0z"/>
+            </g>
+            <g id="Group_22_Copy" data-name="Group 22 Copy" transform="translate(98.535 76.165)">
+                <rect id="Rectangle-3" data-name="Rectangle" width="96.806" height="112.516" rx="2" style="fill:#4175a2"/>
+                <path id="Combined_Shape-2" data-name="Combined Shape" class="cls-1" d="M74.062 39.813H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h72.062a2 2 0 0 1 2 2v35.813a2 2 0 0 1-2 2zM20.847 16.948a1.994 1.994 0 0 0-1.559.746L9.434 29.923a2 2 0 0 0 1.558 3.254h53.832a2 2 0 0 0 1.5-3.321l-15.1-17.149a2 2 0 0 0-1.5-.678 1.98 1.98 0 0 0-1.456.629L35.593 26.124a2 2 0 0 1-2.732.17L22.12 17.407a2 2 0 0 0-1.273-.459zM26.679 5.53a2.766 2.766 0 1 0 2.838 2.765 2.806 2.806 0 0 0-2.838-2.765z" transform="translate(10.372 12.117)"/>
+                <path id="Rectangle-4" data-name="Rectangle" class="cls-1" transform="translate(12.101 64.048)" d="M0 0h63.961v5.193H0z"/>
+                <path id="Rectangle_Copy_19-2" data-name="Rectangle Copy 19" class="cls-1" transform="translate(12.101 77.896)" d="M0 0h41.488v5.193H0z"/>
+                <path id="Rectangle_Copy_20-2" data-name="Rectangle Copy 20" class="cls-1" transform="translate(12.101 91.744)" d="M0 0h48.403v5.193H0z"/>
+            </g>
+            <path id="Oval" d="M0 7.79a7.779 7.779 0 1 1 7.779 7.79A7.784 7.784 0 0 1 0 7.79z" transform="translate(29.388 157.523)" style="opacity:.299;fill:#fff"/>
+            <path id="Rectangle-5" data-name="Rectangle" class="cls-5" transform="translate(32.845 138.482)" d="M0 0h8.643v8.655H0z"/>
+            <ellipse id="Oval_Copy_2" data-name="Oval Copy 2" class="cls-5" cx="4.322" cy="4.328" rx="4.322" ry="4.328" transform="translate(12.101 157.523)"/>
+            <g id="Group_23" data-name="Group 23">
+                <rect id="Rectangle-6" data-name="Rectangle" width="95.077" height="45.007" rx="2" style="fill:#0e497b"/>
+                <path id="Rectangle-7" data-name="Rectangle" class="cls-1" transform="translate(5.186 5.193)" d="M0 0h34.574v34.62H0z"/>
+                <path id="Rectangle-8" data-name="Rectangle" class="cls-1" transform="translate(46.674 10.386)" d="M0 0h38.031v3.462H0z"/>
+                <path id="Rectangle_Copy_21" data-name="Rectangle Copy 21" class="cls-1" transform="translate(46.674 20.772)" d="M0 0h24.201v3.462H0z"/>
+                <path id="Rectangle_Copy_22" data-name="Rectangle Copy 22" class="cls-1" transform="translate(46.674 31.158)" d="M0 0h31.116v3.462H0z"/>
+            </g>
+        </g>
+        <path id="Combined_Shape-3" data-name="Combined Shape" d="M28.181 41.065a1 1 0 0 1-1-1v-3.79h-3.817a1 1 0 0 1-1-1v-.4a1 1 0 0 1 1-1h3.817v-3.787a1 1 0 0 1 1-1h.409a1 1 0 0 1 1 1v3.791h3.817a1 1 0 0 1 1 1v.4a1 1 0 0 1-1 1h-3.818v3.791a1 1 0 0 1-1 1zM4.226 27.377a1 1 0 0 1-1-1v-2.422H.856a.856.856 0 0 1 0-1.712h2.37v-2.421a1 1 0 0 1 1-1h.15a1 1 0 0 1 1 1v2.422h2.37a.856.856 0 0 1 0 1.712h-2.37v2.422a1 1 0 0 1-1 1zm17.074-15.4a1 1 0 0 1-1-1v-3.79h-3.817a1 1 0 0 1-1-1v-.4a1 1 0 0 1 1-1H20.3V1a1 1 0 0 1 1-1h.409a1 1 0 0 1 1 1v3.791h3.817a1 1 0 0 1 1 1v.4a1 1 0 0 1-1 1h-3.818v3.791a1 1 0 0 1-1 1z" transform="translate(167.593 17.758)" style="opacity:.301;fill:#fff"/>
+    </g>
+</svg>
