@@ -2,27 +2,27 @@ import react, { useState } from "react";
 
 const initialValue = {
   name: "",
-  username: "",
-  email: "",
-  phone: "",
+  author: "",
+  publisher: "",
+  available: "",
 };
 
-const AddUser = () => {
-  const [user, setUser] = useState(initialValue);
-  const { name, username, email, phone } = user;
+const AddBook = () => {
+  const [book, setbook] = useState(initialValue);
+  const { name, author, publisher, available } = book;
 
   const onValueChange = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value });
+    setbook({ ...book, [e.target.name]: e.target.value });
   };
 
-  const addUserDetails = async () => {
-    console.log(user);
-    setUser(initialValue);
+  const addbookDetails = async () => {
+    console.log(book);
+    setbook(initialValue);
   };
 
   return (
     <div className="bg-zinc-700 w-full text-red-50">
-      <h2 className="text-center">Add User</h2>
+      <h2 className="text-center">Add Book</h2>
       <div className="flex flex-col items-center">
         <div>
           <div className="w-1/5">
@@ -36,42 +36,42 @@ const AddUser = () => {
             />
           </div>
           <div>
-            <label className="block">Username</label>
+            <label className="block">Author</label>
 
             <input
               className="px-4 py-2 rounded text-black"
               onChange={(e) => onValueChange(e)}
-              name="username"
-              value={username}
+              name="author"
+              value={author}
               id="my-input"
             />
           </div>
           <div>
-            <label className="block">Email</label>
+            <label className="block">Publisher</label>
             <input
               className="px-4 py-2 rounded text-black"
               onChange={(e) => onValueChange(e)}
-              name="email"
-              value={email}
+              name="publisher"
+              value={publisher}
               id="my-input"
             />
           </div>
           <div>
-            <label className="block">Phone</label>
+            <label className="block">Available</label>
             <input
               className="px-4 py-2 rounded text-black"
               onChange={(e) => onValueChange(e)}
-              name="phone"
-              value={phone}
+              name="available"
+              value={available}
               id="my-input"
             />
           </div>
           <div className="my-5">
             <button
               className="bg-green-400 w-full py-2 rounded text-base  hover:bg-green-300 text-slate-800"
-              onClick={() => addUserDetails()}
+              onClick={() => addbookDetails()}
             >
-              Add User
+              Add Book
             </button>
           </div>
         </div>
@@ -80,4 +80,4 @@ const AddUser = () => {
   );
 };
 
-export default AddUser;
+export default AddBook;
