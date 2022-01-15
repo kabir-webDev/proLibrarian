@@ -24,6 +24,9 @@ const Header = () => {
         <div>
           <Link href="/add-book">Add Book</Link>
         </div>
+        <div>
+          <Link href="/all-book">Book List</Link>
+        </div>
       </div>
     </>
   );
