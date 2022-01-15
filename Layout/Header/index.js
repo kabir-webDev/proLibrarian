@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 import Head from "next/head";
+import css from "./style.module.css";
 
 const Header = () => {
   return (
@@ -9,10 +11,13 @@ const Header = () => {
         <title>Pro Librarian</title>
       </Head>
 
-      <div
-        style={{ width: "100%", background: "#63CAB5", textAlign: "center" }}
-      >
-        <h1 style={{ color: "#283747" }}>This is Header</h1>
+      <div className={css.container}>
+        <div>
+          <Link href="/add-user">Add User</Link>
+        </div>
+        <div>
+          <Link href="/all-user">All User</Link>
+        </div>
       </div>
     </>
   );
