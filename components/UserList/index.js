@@ -54,7 +54,7 @@ const UserList = () => {
             {users.map((user, index) => (
               <TableRow key={user.id}>
                 <TableCell>
-                  <span className="text-base">{index}</span>
+                  <span className="text-base">{index + 1}</span>
                 </TableCell>
                 <TableCell>
                   <span className="text-base">{user.name}</span>
