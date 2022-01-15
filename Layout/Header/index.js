@@ -13,6 +13,9 @@ const Header = () => {
 
       <div className={css.container}>
         <div>
+          <Link href="/">Pro Librarian</Link>
+        </div>
+        <div>
           <Link href="/add-user">Add User</Link>
         </div>
         <div>

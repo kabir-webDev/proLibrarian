@@ -41,10 +41,10 @@ const UserList = () => {
     <>
       <div className="flex bg-emerald-400 h-14 items-center text-xl font-bold text-teal-900 text">
         <div className="ml-[70px]">Id</div>
-        <div className="ml-[40px]">Name</div>
+        <div className="ml-[32px]">Name</div>
         <div className="ml-[185px]">Username</div>
-        <div className="ml-[96px]">Email</div>
-        <div className="ml-[225px]">Phone</div>
+        <div className="ml-[99px]">Email</div>
+        <div className="ml-[226px]">Phone</div>
         <div></div>
       </div>
 
