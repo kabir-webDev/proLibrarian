@@ -15,9 +15,9 @@ import axios from "axios";
 
 const initialValue = {
   name: "",
-  author: "",
-  publisher: "",
-  available: "",
+  username: "",
+  email: "",
+  phone: "",
 };
 
 const useStyles = makeStyles({
@@ -40,14 +40,21 @@ export async function getServerSideProps() {
   };
 }
 
-const BookEdit = ({ info }) => {
-  console.log("Books: ", info);
-  const [book, setbook] = useState(initialValue);
+const EditBook = ({ info }) => {
+  const router = useRouter();
+  const query = router.query;
+  const classes = useStyles();
+  const [book, setBook] = useState(initialValue);
+  useEffect(() => {
+    setBook(info);
+  }, [info]);
 
-  const { name, author, publisher, available } = book;
+  console.log("Books: ", book);
+
+  const { name, username, email, phone } = book;
 
   const onValueChange = (e) => {
-    setbook({ ...book, [e.target.name]: e.target.value });
+    setBook({ ...book, [e.target.name]: e.target.value });
   };
 
   const editUserDetails = async () => {
@@ -56,9 +63,14 @@ const BookEdit = ({ info }) => {
     console.log("Book Edit List: ", book);
   };
 
+  // const onValueChange = (e) => {
+  //   console.log(e.target.value);
+  //   setUser({ ...user, [e.target.name]: e.target.value });
+  // };
+
   return (
     <div className="bg-zinc-700 w-full text-red-50">
-      <h2 className="text-center">Add Book</h2>
+      <h2 className="text-center pt-6 text-2xl">Edit Book</h2>
       <div className="flex flex-col items-center">
         <div>
           <div className="w-1/5">
@@ -72,33 +84,33 @@ const BookEdit = ({ info }) => {
             />
           </div>
           <div>
-            <label className="block">Author</label>
+            <label className="block">Username</label>
 
             <input
               className="px-4 py-2 rounded text-black"
               onChange={(e) => onValueChange(e)}
-              name="author"
-              value={author}
+              name="username"
+              value={username}
               id="my-input"
             />
           </div>
           <div>
-            <label className="block">Publisher</label>
+            <label className="block">Email</label>
             <input
               className="px-4 py-2 rounded text-black"
               onChange={(e) => onValueChange(e)}
-              name="publisher"
-              value={publisher}
+              name="email"
+              value={email}
               id="my-input"
             />
           </div>
           <div>
-            <label className="block">Available</label>
+            <label className="block">Phone</label>
             <input
               className="px-4 py-2 rounded text-black"
               onChange={(e) => onValueChange(e)}
-              name="available"
-              value={available}
+              name="phone"
+              value={phone}
               id="my-input"
             />
           </div>
@@ -116,4 +128,4 @@ const BookEdit = ({ info }) => {
   );
 };
 
-export default BookEdit;
+export default EditBook;
