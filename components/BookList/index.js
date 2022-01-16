@@ -12,7 +12,7 @@ import {
 import axios from "axios";
 import Link from "next/link";
 
-const UserList = () => {
+const BookList = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -42,9 +42,9 @@ const UserList = () => {
       <div className="flex bg-emerald-400 h-14 items-center text-xl font-bold text-teal-900 text">
         <div className="ml-[70px]">Id</div>
         <div className="ml-[32px]">Name</div>
-        <div className="ml-[185px]">Username</div>
-        <div className="ml-[99px]">Email</div>
-        <div className="ml-[226px]">Phone</div>
+        <div className="ml-[185px]">Author</div>
+        <div className="ml-[99px]">Publisher</div>
+        <div className="ml-[226px]">Available</div>
         <div></div>
       </div>
 
@@ -74,9 +74,9 @@ const UserList = () => {
                     variant="contained"
                     style={{ marginRight: 10 }}
                     // component={Link}
-                    to={`/edit/${user._id}`}
+                    // to={`/edit/${user._id}`}
                   >
-                    <Link href={`/edit-user/${user.id}`}>Edit User</Link>
+                    <Link href={`/edit-book/${user.id}`}>Edit</Link>
                   </Button>{" "}
                   {/* change it to user.id to use JSON Server */}
                   <Button
@@ -97,4 +97,4 @@ const UserList = () => {
   );
 };
 
-export default UserList;
+export default BookList;

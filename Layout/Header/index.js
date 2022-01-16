@@ -12,21 +12,21 @@ const Header = () => {
       </Head>
 
       <div className={css.container}>
-        <div>
-          <Link href="/">Pro Librarian</Link>
-        </div>
-        <div>
-          <Link href="/add-user">Add User</Link>
-        </div>
-        <div>
-          <Link href="/all-user">All User</Link>
-        </div>
-        <div>
-          <Link href="/add-book">Add Book</Link>
-        </div>
-        <div>
-          <Link href="/all-book">Book List</Link>
-        </div>
+        <Link href="/">
+          <div>Pro Librarian</div>
+        </Link>
+        <Link href="/add-user">
+          <div>Add User</div>
+        </Link>
+        <Link href="/all-user">
+          <div>All User</div>
+        </Link>
+        <Link href="/add-book">
+          <div>Add Book</div>
+        </Link>
+        <Link href="/all-book">
+          <div>Book List</div>
+        </Link>
       </div>
     </>
   );

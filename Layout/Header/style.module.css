@@ -15,11 +15,12 @@
 .container {
   background-color: #395a7d;
   width: 100%;
-  height: 50px;
+  /* height: 50px; */
   text-align: center;
   display: flex;
   justify-content: start;
-  align-items: center;
+  /* align-items: center; */
+
   color: white;
   font-size: large;
   gap: 50px;
@@ -28,4 +29,15 @@
 .home {
   display: flex;
   justify-content: space-between;
+}
+
+.container div {
+  padding: 20px 10px 20px 10px;
+  border-left: 1px solid rgb(125, 226, 130);
+  border-right: 1px solid rgb(125, 226, 130);
+}
+
+.container div:hover {
+  background-color: rgb(173, 223, 140);
+  cursor: pointer;
 }
