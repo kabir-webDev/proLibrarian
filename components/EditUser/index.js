@@ -41,9 +41,6 @@ export async function getServerSideProps() {
 }
 
 const UserEdit = ({ info }) => {
-  const router = useRouter();
-  const query = router.query;
-  const classes = useStyles();
   const [book, setBook] = useState(initialValue);
   useEffect(() => {
     setBook(info);
@@ -62,11 +59,6 @@ const UserEdit = ({ info }) => {
     // history.push("/all");
     console.log("Book Edit List: ", book);
   };
-
-  // const onValueChange = (e) => {
-  //   console.log(e.target.value);
-  //   setUser({ ...user, [e.target.name]: e.target.value });
-  // };
 
   return (
     <div className="bg-zinc-700 w-full text-red-50">
@@ -119,7 +111,7 @@ const UserEdit = ({ info }) => {
               className="bg-green-400 w-full py-2 rounded text-base  hover:bg-green-300 text-slate-800"
               onClick={() => editUserDetails()}
             >
-              Edit Book
+              Edit User
             </button>
           </div>
         </div>

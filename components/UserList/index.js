@@ -1,19 +1,11 @@
 import react, { useState, useEffect } from "react";
-import {
-  Table,
-  TableHead,
-  TableCell,
-  Paper,
-  TableRow,
-  TableBody,
-  Button,
-  makeStyles,
-} from "@material-ui/core";
 import axios from "axios";
 import Link from "next/link";
+import ReactLoading from "react-loading";
 
 const UserList = () => {
   const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     getAllUsers();
@@ -27,73 +19,85 @@ const UserList = () => {
   };
 
   const getAllUsers = async () => {
+    setLoading(true);
     try {
       let response = await axios.get(
         "https://jsonplaceholder.typicode.com/users"
       );
       setUsers(response.data);
+      setLoading(false);
     } catch (err) {
       console.log("Error: ", err);
     }
   };
   console.log(users);
-  return (
-    <>
-      <div className="flex bg-emerald-400 h-14 items-center text-xl font-bold text-teal-900 text">
-        <div className="ml-[70px]">Id</div>
-        <div className="ml-[32px]">Name</div>
-        <div className="ml-[185px]">Username</div>
-        <div className="ml-[99px]">Email</div>
-        <div className="ml-[226px]">Phone</div>
-        <div></div>
-      </div>
 
-      <div className="w-11/12 mx-auto">
-        <Table>
-          <TableBody>
-            {users.map((user, index) => (
-              <TableRow key={user.id}>
-                <TableCell>
-                  <span className="text-base">{index + 1}</span>
-                </TableCell>
-                <TableCell>
-                  <span className="text-base">{user.name}</span>
-                </TableCell>
-                <TableCell>
-                  <span className="text-base">{user.username}</span>
-                </TableCell>
-                <TableCell>
-                  <span className="text-base">{user.email}</span>
-                </TableCell>
-                <TableCell>
-                  <span className="text-base">{user.phone}</span>
-                </TableCell>
-                <TableCell>
-                  <Button
-                    color="primary"
-                    variant="contained"
-                    style={{ marginRight: 10 }}
-                    // component={Link}
-                    to={`/edit/${user._id}`}
-                  >
-                    <Link href={`/edit-user/${user.id}`}>Edit User</Link>
-                  </Button>{" "}
-                  {/* change it to user.id to use JSON Server */}
-                  <Button
-                    color="secondary"
-                    variant="contained"
-                    onClick={() => deleteUserData(user.id)}
-                  >
-                    Delete
-                  </Button>{" "}
-                  {/* change it to user.id to use JSON Server */}
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+  return loading == true ? (
+    <div className="w-full">
+      <div className="flex justify-center">
+        <ReactLoading type="spinningBubbles" color="#CB4335" />
       </div>
-    </>
+    </div>
+  ) : (
+    <div className="w-full">
+      <div className="w-11/12 m-auto">
+        <table>
+          <tr className="text-xl text-teal-500">
+            <th className="border-2 text-left">
+              <div className="py-2 pr-6 pl-2">Id</div>
+            </th>
+            <th className="text-left border-2 pl-2">
+              <div>Name</div>
+            </th>
+            <th className="text-left border-2 pl-2">
+              <div>Username</div>
+            </th>
+            <th className="text-left border-2 pl-2">
+              <div>Email</div>
+            </th>
+            <th className="text-left border-2 pl-2">
+              <div>Phone</div>
+            </th>
+            <th className="text-center border-2 pl-2 text-rose-500">
+              <div>Operation</div>
+            </th>
+          </tr>
+          {users.map((user, index) => (
+            <tr key={user.id} className="text-lg text-teal-900">
+              <td className="border-2 pl-2">
+                <span className="text-xl">{index + 1}</span>
+              </td>
+              <td className="border-2 pr-6 pl-2">
+                <span className="text-xl">{user.name}</span>
+              </td>
+              <td className="border-2 pr-6 pl-2">
+                <span className="text-xl">{user.username}</span>
+              </td>
+              <td className="border-2 pr-6 pl-2">
+                <span className="text-xl">{user.email}</span>
+              </td>
+              <td className="border-2 pr-6 pl-2">
+                <span className="text-xl">{user.phone}</span>
+              </td>
+              <td className="border-2">
+                <button
+                  className="px-4 py-2 bg-emerald-400 hover:text-rose-50 rounded"
+                  to={`/edit/${user._id}`}
+                >
+                  <Link href={`/edit-user/${user.id}`}>Edit User</Link>
+                </button>{" "}
+                <button
+                  className="px-4 py-2 bg-rose-500 hover:text-rose-50 rounded"
+                  onClick={() => deleteUserData(user.id)}
+                >
+                  Delete
+                </button>{" "}
+              </td>
+            </tr>
+          ))}
+        </table>
+      </div>
+    </div>
   );
 };
 
